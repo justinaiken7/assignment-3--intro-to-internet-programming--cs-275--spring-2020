@@ -13,3 +13,15 @@ if (tbl != null)
 		}
 	}
 
+function performRotation(table) 
+{
+    let others = document.getElementsByTagName(`td`);
+    for (var i = 0; i < others.length; i++)
+	{
+        item = others[i];
+        if (item != table)
+			{
+            item.style.webkitTransform = `rotate(0deg)`;
+            item.style.color = `black`;
+			}
+    }
