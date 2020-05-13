@@ -25,3 +25,17 @@ function performRotation(table)
             item.style.color = `black`;
 			}
     }
+	
+	if (table.style.webkitTransform == `rotate(180deg)`) 
+		{
+			table.style.webkitTransform = `rotate(0deg)`;
+			table.style.color = `black`;
+		} 
+	else if (table.style.webkitTransform == `rotate(0deg)` || 
+			table.style.webkitTransform == ``) 
+		{
+			table.style.webkitTransform = `rotate(180deg)`;
+			table.style.color = `#ff0000`;
+		}
+    table.style.WebkitTransitionDuration = `0.5s`;
+}
