@@ -12,3 +12,9 @@ body
     min-width: 100vw;
     align-items: center;
 	}
+table 
+	{
+    border-collapse: collapse;
+    margin: 0px auto;
+	}
+
